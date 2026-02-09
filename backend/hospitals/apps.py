@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 class HospitalsConfig(AppConfig):
-    name = "apps.hospitals"
+    name = "hospitals"
     verbose_name = "Hospitals & Clinics"

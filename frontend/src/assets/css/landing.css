@@ -1,0 +1,100 @@
+@import "tailwindcss";
+/* src/assets/css/landing.css */
+:root {
+  --primary: #ec1325;
+  --bg-light: #f8f6f6;
+  --bg-dark: #221012;
+  --text-main: #0f172a;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  margin: 0;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(236, 19, 37, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+/* Header & Nav */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(236, 19, 37, 0.1);
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(236, 19, 37, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #c40f1f;
+  transform: translateY(-2px);
+}
+
+/* Sections */
+.stats-bar {
+  background-color: var(--primary);
+  color: white;
+  padding: 60px 0;
+}
+
+.impact-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #f1f5f9;
+  transition: all 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid helper for standard layout */
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
